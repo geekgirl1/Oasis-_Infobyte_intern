@@ -1,0 +1,7 @@
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+       # unique_list = list(dict.fromkeys(List))
+        #unique_list=unique_list.sort()
+        #print(unique_list)
+        nums[:] = sorted(set(nums))
+        return len(nums)
